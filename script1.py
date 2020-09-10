@@ -4,7 +4,14 @@ app = Flask(__name__)
 
 
 @app.route('/')
+# @app.route('/about/')
+# app.route() is a decorator
 def home():
+    return "the main reception"
+
+
+@app.route('/about/')
+def about():
     return "This is the playground to create"
 
 
